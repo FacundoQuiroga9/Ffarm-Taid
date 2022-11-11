@@ -1,0 +1,12 @@
+
+.logo-container{
+  width: 10rem;
+}
+
+
+
+@media (min-width: 1000px){
+  .logo-container{
+    width: 14rem;
+  }
+}
