@@ -1,6 +1,7 @@
 import './Navbar.css'
 import Logo from '../Logo/Logo'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = ()=>{
   const [menu, setMenu]= useState(false)
@@ -20,10 +21,10 @@ const Navbar = ()=>{
         </button>
         <nav className={`header-nav ${menu ? "active": ""}`}>
           <ul className="header-ul">
-            <li className="header-li" onClick={openMenu}><a href='#about-me' className='header-a'>Donde estamos?</a></li>
-            <li className="header-li" onClick={openMenu}><a href='#skills' className='header-a'>Hosteria</a></li>
-            <li className="header-li" onClick={openMenu}><a href='#projects' className='header-a'>Restaurante</a></li>
-            <li className="header-li" onClick={openMenu}><a href='#contacts' className='header-a'>Contacto</a></li>
+            <li className="header-li" onClick={openMenu}><Link to='/quienes-somos' className='header-a'>Donde estamos?</Link></li>
+            <li className="header-li" onClick={openMenu}><Link to='/hosteria' className='header-a'>Hosteria</Link></li>
+            <li className="header-li" onClick={openMenu}><Link to='restaurante' className='header-a'>Restaurante</Link></li>
+            <li className="header-li" onClick={openMenu}><Link to='contacto' className='header-a'>Contacto</Link></li>
           </ul>
         </nav>
     </header>
