@@ -21,10 +21,10 @@ const Navbar = ()=>{
         </button>
         <nav className={`header-nav ${menu ? "active": ""}`}>
           <ul className="header-ul">
-            <li className="header-li" onClick={openMenu}><Link to='/quienes-somos' className='header-a'>Donde estamos?</Link></li>
+            <li className="header-li" onClick={openMenu}><Link to='/quienes-somos' className='header-a'>Quienes somos?</Link></li>
             <li className="header-li" onClick={openMenu}><Link to='/hosteria' className='header-a'>Hosteria</Link></li>
-            <li className="header-li" onClick={openMenu}><Link to='restaurante' className='header-a'>Restaurante</Link></li>
-            <li className="header-li" onClick={openMenu}><Link to='contacto' className='header-a'>Contacto</Link></li>
+            <li className="header-li" onClick={openMenu}><Link to='/restaurante' className='header-a'>Restaurante</Link></li>
+            <li className="header-li" onClick={openMenu}><Link to='/contacto' className='header-a'>Contacto</Link></li>
           </ul>
         </nav>
     </header>
