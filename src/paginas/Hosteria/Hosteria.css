@@ -1,7 +1,13 @@
-.page-container{
-  color: black;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 7rem 9;
+
+.texto-contacto-hosteria{
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+.item-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.item-container >svg{
+  width: 2rem;
 }

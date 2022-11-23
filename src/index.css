@@ -8,7 +8,7 @@
     👉 Unificar la tipografía de todas las etiquetas de una web
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 /* Aquí definimos las Custom properties */
 :root{
