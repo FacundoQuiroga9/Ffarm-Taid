@@ -1,47 +1,85 @@
 .footer{
-  padding: 1rem 3rem 1rem 2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem 2rem;
+ background-color: black;
+}
+.footer-container-ffarmtaid{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 5rem;
-  width: 100%;
-  background-color: black;
-  color: white;
-  font-size: .8rem;
+  margin-bottom: .5rem;
 }
-h4{
+.footer-container-ffarmtaid-logo{
+  margin-bottom: .5rem;
+}
+.footer-container-ffarmtaid-logo>svg{
+  width: 5rem;
+}
+.footer-container-ffarmtaid-redes{
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
 }
-h4 a{
-  width: 2rem;
+.footer-container-ffarmtaid-redes>a{
+  width: 1rem;
+  color: white;
+  margin: .5rem;
+}
+.footer-container-ffarmtaid-redes>a>svg{
+ width: 100%;
+ height: 100%;
+}
+
+.footer-container-qfportfolio-text>p{
+  color: white;
+  font-size: .6rem;
+}
+.footer-container-qfportfolio-text a{
   font-weight: bold;
-  margin-left: .5rem;
 }
-.bi-instagram{
-  width: 100%;
-  fill: white;
+.footer-container-qfportfolio-text a:hover{
+  color:#EC1B24;
 }
-.bi-instagram:hover path{
-  fill: #EC1B24;
-}
+
+
 @media (min-width: 420px){
-  .footer{
-    height: 6rem;
-    font-size: 1rem;
+  .footer-container-qfportfolio-text>p{
+    color: white;
+    font-size: .7rem;
   }
 }
 @media screen and (min-width: 750px){
-  .footer{
-    height: 3rem;
-    font-size: .8rem;
+  .footer-container-ffarmtaid-logo>svg{
+    width: 8rem;
+  }
+  .footer-container-ffarmtaid-redes{
+    margin-bottom:.5rem;
+  }
+  .footer-container-ffarmtaid-redes>a{
+    width: 1.5rem;
+    margin: .5rem;
+  }
+  .footer-container-qfportfolio-text>p{
+    font-size: 1rem;
   }
 }
 
+
 @media (min-width: 1000px){
-  .footer{
-    height: 4rem;
-    font-size: 1rem;
+  .footer-container-ffarmtaid-logo>svg{
+    width: 10rem;
+  }
+  .footer-container-ffarmtaid-redes{
+    margin-bottom: .5rem;
+  }
+  .footer-container-ffarmtaid-redes>a{
+    width: 2rem;
+    margin: .7rem;
+  }
+  .footer-container-qfportfolio-text>p{
+    margin-top: .5rem;
+    font-size: 1.2rem;
   }
 }

@@ -1,4 +1,5 @@
 .boton-whatsapp{
+  user-select: none;
   font-size: 1rem;
   display: flex;
   justify-content: space-around;
@@ -7,6 +8,9 @@
   color: white;
   max-width: 11rem;
   padding: .3rem 1rem;
+}
+.boton-whatsapp:hover{
+  background-color: #EC1B24;
 }
 .bi-whatsapp{
   width: 2rem;
