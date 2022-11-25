@@ -35,7 +35,7 @@ const Footer = ()=>{
       </div>
       <div className='footer-container-qfportfolio'>
         <div className='footer-container-qfportfolio-text'>
-         <p>Desarrollado por <a href="https://quirogafacundo.com" target='_blanck'>Facundo Quirgoa</a></p>
+         <p>Desarrollado por <a href="https://quirogafacundo.com" target='_blanck'>Facundo Quiroga</a></p>
         </div>
       </div>
     </footer>
