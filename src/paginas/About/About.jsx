@@ -12,7 +12,7 @@ const About = () =>{
       </p>
       <img className='page-imagen' src={fotoHosteria} alt="Foto de hosteria Ffarm Taid" />
       <p className="page-texto">
-      Como lo indica nuestro nombre, Ffarm Taid (en galés "granja del abuelo"), somos una hosteria de tradición galesa con un enorme sentido de pertenencia a la cultura que tanto caracteriza la zona del valle chubutense.
+      Como lo indica el nombre, Ffarm Taid (en galés "granja del abuelo"), somos una hosteria de tradición galesa con un enorme sentido de pertenencia a la cultura que tanto caracteriza la zona del valle chubutense.
       </p>
       <img className='page-imagen2' src={fotoHosteria2} alt="Foto de hosteria Ffarm Taid" />     
       <div className='item-container'>

@@ -10,7 +10,7 @@ const Hosteria = () =>{
         <BotonContacto />
       </div>
       <div className="carouseleitems-container">
-      <Carousel />
+        <Carousel />
       <div className='items-container'>
       <div className='item-container'>
       <div className='icon-container'>
