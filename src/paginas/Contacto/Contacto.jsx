@@ -1,28 +1,10 @@
 import './Contacto.css'
-import { useState } from 'react'
-import emailjs from '@emailjs/browser'
+import Mapa from '../../components/Mapa/Mapa'
+
 import BotonContacto from '../../components/BotonContacto/BotonContacto'
 
 const Contacto = () =>{
-  const validarFormulario = (nombre, email,mensaje)=>{
-    const regex = new RegExp(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/)
-    if(!(nombre.trim().length > 3)){
-      return'name'
-    }if(!(regex.test(email))){
-      return "e-mail"
-    }if(mensaje.length< 50){
-     return "message"
-    }
-  }
-  const [nombre, setNombre]= useState('')
-  const [email, setEmail]= useState('')
-  const [mensaje, setMensaje]= useState('')
-  const error = validarFormulario(nombre, email,mensaje)
-  const modal = document.querySelector('.contacto-modal-desactivado')
-
-  const ocultarModal =()=>{
-    modal.classList.remove('contacto-modal-contenedor')
-  }
+  
   return (
     <div class='page-container'>
 
@@ -52,36 +34,33 @@ const Contacto = () =>{
         </a>
       </div>
     </div>
-    
-      <div className="formulario-contenedor">
-      <form action='' className='formulario' id='formulario'
-          onSubmit={e=>{
-            e.preventDefault();
-            if(!error){
-              emailjs.sendForm('service_pjc9e5i','template_blsf4ww', e.target,'eyhRaGuc2ZMqOOaax')
-            .then(modal.classList.add('contacto-modal-contenedor'))
-            .catch(error => console.log(error))
-            setNombre('')
-            setEmail('')
-            setMensaje('')
-            }            
-            }}>
-        <label className='label' htmlFor='nombre'>Nombre <span>*</span></label>
-        <input  name="nombre" type="text" className="formulario-nombre" value={nombre} onChange={e =>setNombre(e.target.value)} required/>
-        <label className='label' htmlFor='mail'>E-mail <span>*</span></label>
-        <input placeholder='ejemplo@ejemplo.com' name="mail" type="text" className="formulario-mail" onChange={e =>setEmail(e.target.value)} value={email} required/>
-        <label className='label' htmlFor='mensaje'>Mensaje <span>*</span></label>
-        <textarea name="mensaje" type="textarea" className="formulario-mensaje" onChange={e =>setMensaje(e.target.value)} value={mensaje} required/>
-        <p>{error}</p>
-        <button type="submit" disabled={error} className="formulario-boton">Enviar</button>
-      </form>
+    <div className='item-container'>
+        <div className='icon-container'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+            <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+          </svg>
+        </div>
+        <p>Ubicado en el km 1453 de la ruta 3. Trelew, Chubut. Patagonia Argentina.</p>
       </div>
-      <div className="contacto-modal-desactivado">
-      <div className="contacto-modal">
-        <p className="contacto-modal-agradecimiento">Muchas gracias por su mensaje!</p>
-        <button onClick={ocultarModal} className='formulario-boton'>Continue</button>
+      <div className='item-container'>
+        <div className='icon-container'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fuel-pump-fill" viewBox="0 0 16 16">
+            <path d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1c.564 0 1.034.11 1.412.336.383.228.634.551.794.907.295.655.294 1.465.294 2.081V7.5a.5.5 0 0 1-.5.5H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V2Zm2.5 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5Z"/>
+          </svg>
+        </div>
+        <p>A escasos metros de una estación de servicio.</p>
       </div>
+      <div className='item-container'>
+        <div className='icon-container'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.1 42.2" xmlSpace="preserve" className='open-icon'>
+            <path d="M39.7 16.9c-1.5 0-2.2.1-2.3.2-.1.1-.1 1.2-.1 3.2v2.6c0 .2.8.3 2.5.3 2 0 3-1 3-3 0-2.2-1-3.3-3.1-3.3zM20.1 17.2c-1.3 0-2.4.5-3.3 1.6-.9 1-1.3 2.2-1.3 3.5 0 1.4.4 2.6 1.2 3.5.9 1 2 1.5 3.3 1.5 1.3 0 2.4-.5 3.3-1.5.9-1 1.3-2.1 1.3-3.4 0-1.4-.4-2.5-1.2-3.5-.8-1.2-1.9-1.7-3.3-1.7z" />
+            <path d="M3.8 4.7v35.8h88.9V4.7H3.8zm23.4 24.6c-1.9 2-4.2 2.9-7 2.9s-5.2-1-7-3c-1.8-1.9-2.7-4.3-2.7-7.1s.9-5.2 2.7-7.2c1.9-2 4.2-3 7-3s5.1 1 7 3c1.8 2 2.7 4.3 2.7 7.2 0 2.9-.9 5.3-2.7 7.2zm19.4-4.1c-1.2 1.4-2.9 2.2-5.1 2.2-.4 0-.9 0-1.6-.1-.7 0-1.3-.1-1.6-.1-.4 0-.6.2-.6.5 0 .4 0 1 .1 1.9s.1 1.4.1 1.9c0 .2-.1.3-.3.3h-5c-.3 0-.4-.1-.4-.4v-9.2c0-2.9-.1-5.9-.4-9V13c0-.2.1-.3.4-.3.7-.1 2.3-.1 4.7-.1 1.4 0 2.8 0 4.1.1 2.2.1 3.9.7 5.2 2 1.3 1.3 2 3.1 2 5.2.1 2.2-.5 4-1.6 5.3zm17.3 4.4c-.2 1.1-.3 1.8-.4 2-.1.2-.3.3-.5.3h-.4c-.7-.1-2.6-.1-5.8-.1h-6.2c-.3 0-.5-.1-.5-.4 0-1 .1-2.6.2-4.6s.2-3.6.2-4.6c0-1-.1-3-.2-5.8 0-.7-.1-1.8-.2-3.3v-.2c0-.2.1-.3.3-.3.7 0 1.7 0 3 .1s2.4.1 3 .1c.7 0 1.7 0 3-.1s2.3-.1 3-.1c.5 0 .7.2.8.5 0 .2.1.8.2 1.9s.1 1.7.1 1.9c0 .2-.1.3-.3.3h-.3c-2.4-.2-4.6-.3-6.5-.3-.5 0-.8.1-.9.3 0 .1-.1.5-.1 1.1 0 .6.1 1 .3 1.2.2.2.5.3.9.3h1.2c1.1 0 2.3 0 3.5-.1.1 0 .4 0 .8-.1.3 0 .6-.1.7-.1.2 0 .3.1.3.3 0 .1-.1.8-.2 2.1.1.8.1 1.5.1 2.2 0 .2-.1.3-.4.3l-1.2-.1c-.5-.1-1.7-.1-3.6-.1h-1.4c-.4 0-.6.1-.7.3v.8c0 .7 0 1.1.1 1.3.2.3.7.6 1.8.6h2c.5 0 1.2 0 2.2-.1s1.7-.1 2.1-.1c.2 0 .3.2.3.5 0 .4-.1 1.1-.3 2.1zm20.3-11.9c-.1 2.1-.1 3.6-.1 4.7v9c0 .2-.1.4-.4.4h-2c-.2 0-.6 0-1.1-.1s-.8-.1-1.1-.1c-.2 0-.4-.2-.6-.5-.7-.9-2.1-2.8-4.4-5.9-.6-.8-1.6-2.1-2.9-3.7 0-.1-.1-.1-.2-.2-.1.1-.1.2-.1.3 0 1.1 0 2.6.1 4.8s.1 3.7.1 4.8c0 .3-.1.5-.4.5h-4.7c-.3 0-.4-.1-.4-.4 0-1 0-2.5.1-4.5s.1-3.5.1-4.5 0-2.6-.1-4.7S66 14 66 13c0-.2.2-.3.5-.3.5 0 1.2 0 2-.1.2 0 .5-.1 1.1-.2.5-.1.8-.1 1.1-.1.1 0 .3.2.5.5l5.1 7c.5.6 1.1 1.5 2.1 2.8.2.3.4.4.6.4.1 0 .2-.4.2-1.1 0-1-.1-2.4-.2-4.3s-.2-3.4-.2-4.3c0-.3.1-.5.3-.5.5 0 1.4 0 2.5-.1s1.9-.1 2.5-.1c.2 0 .3.1.3.4-.1 1-.2 2.6-.2 4.7z" />
+          </svg>
+        </div>
+        <p>Abierto 24hs.</p>
       </div>
+      <Mapa />
     </div>
 
     
