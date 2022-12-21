@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './Carousel.css'
+import './CarouselHab.css'
 import baño from '../../img/baño.jpeg'
 import television from '../../img/television.jpeg'
 import garage from '../../img/garage.jpeg'
@@ -29,20 +29,9 @@ import cama from '../../img/habitacion5.jpeg'
     },600)
   }
 
-  const previous = ()=>{
-    selectNewImage(selectedIndex, images, false)
-  }
-  const next = ()=>{
-    selectNewImage(selectedIndex, images)
-  }
-
   return(
     <div className='carrousel-container'>
       <img className={`carrousel-image ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
-      <div className='buttons-container'>
-        <button onClick={previous}>{'<'}</button>
-        <button onClick={next}>{'>'}</button>
-      </div>
     </div>
   )
 }

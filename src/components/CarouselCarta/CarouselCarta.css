@@ -1,0 +1,48 @@
+
+.carrousel-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.buttons-container{
+  display: flex;
+  width: 100%;
+}
+.buttons-container>button{
+  user-select: none;
+  margin:0;
+  background-color: black;
+  color: white;
+  width: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.buttons-container>button:hover{
+  background-color: #EC1B24;
+  
+}
+.carrousel-carta-image{
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  user-select: none;
+}
+.loaded{
+  opacity: 1;
+}
+@media (min-width: 420px){
+
+}
+@media (min-width: 750px){
+
+}
+@media (min-width: 1000px){
+  .carrousel-container{
+    height: 100%;
+    width: 50%;
+  }
+
+}
