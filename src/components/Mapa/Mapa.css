@@ -1,10 +1,10 @@
 .leaflet-container{
-  margin-top: 1rem;
-  margin-bottom: 0;
-  width: 100%;
+  margin: 1rem auto;
+  width: 90%;
   height: 20rem;
   z-index: 0;
   border: .3rem solid black;
+
 }
 
 @media (min-width: 750px){

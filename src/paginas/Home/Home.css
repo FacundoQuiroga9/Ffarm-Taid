@@ -5,9 +5,16 @@ video{
 .title{
   margin: 2em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
   font-weight: bold;
+  font-family: 'Almendra SC', serif;
+  letter-spacing: .2em;
+  line-height: 1.4em;
+  scroll-margin-top: 10.2rem;
+}
+.title::selection{
+  background-color: #89B88B;
 }
 .section_hosteria{
   display: flex;
@@ -15,7 +22,9 @@ video{
   justify-content: center;
   padding: 0;
   flex-direction: column;
+  
 }
+
 .info-container{
   margin-top: 3em;
   display: flex;
@@ -27,12 +36,15 @@ video{
   font-weight: bold;
   color: black;
 }
+.servicios::selection{
+  background-color: #983B35;
+}
 .items-container{
   margin-top: 2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: black;
 }
 .contacto-container{
@@ -49,11 +61,38 @@ video{
   font-size: 1.2em;
   font-weight: bold;
   color: black;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 .section_restaurante{
   display: flex;
   flex-direction: column;
+}
+.section-contacto-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  background-color: white;
+  width: 90%;
+}
+.social-media{
+  display: flex;
+  
+ 
+}
+.media-link{
+  background-color: black;
+  color: white;
+  padding: .5em;
+  margin: 0 1em 1.5em 1em;
+}
+.media-link:hover{
+  background-color: #EC1B24;
+}
+.media-link svg{
+  width: 2em;
+  height: 2em
 }
 @media (min-width: 420px){
 
@@ -62,5 +101,15 @@ video{
 
 }
 @media (min-width: 1000px){
+  .section_hosteria{
+    display: flex;
+    flex-direction: row;
+  }
+  .info-container{
+    width: 50%;
+  }
 
+  .items-container{
+    padding: 0 2rem;
+  }
 }

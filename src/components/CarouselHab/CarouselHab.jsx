@@ -30,8 +30,8 @@ import cama from '../../img/habitacion5.jpeg'
   }
 
   return(
-    <div className='carrousel-container'>
-      <img className={`carrousel-image ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
+    <div className='carrousel-container-hab'>
+      <img className={`carrousel-image-hab ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
     </div>
   )
 }
