@@ -1,0 +1,56 @@
+{
+    "navbar":{
+      "rooms": "Habitaciones",
+      "restaurant": "Restaurante",
+      "about-us": "Sobre nosotros",
+      "bookings": "Reservas"
+    },
+    "rooms":{
+      "title":"HABITACIONES",
+      "subtitle":"SERVICIOS",
+      "icons": {
+        "bed": "Habitaciones hasta para 6 personas",
+        "towell": "Ropa de cama y blancos",
+        "air-conditioner": "Aire acondicionado",
+        "central-heating": "Calefacción central",
+        "camera": "Cámaras de vigilancia",
+        "security": "Seguridad 24hs",
+        "parking": "Estacionamiento",
+        "pets": "Aceptamos mascotas"
+      }
+    },
+    "restaurant":{
+        "title": "RESTAURANTE"
+    },
+
+    "about-us":{
+      "title":"SOBRE NOSOTROS",
+      "card":{
+        "title":"Bienvenido a",
+        "text": "En 2008 comenzó el sueño de construir una hosteria en la granja de nuestro abuelo. De ahi en más, no hemos dejado de crecer.",
+        "cards":{
+            "rooms": "HABITACIONES",
+            "guests": "HUÉSPEDES POR AÑO",
+            "staff": "STAFF"
+        }
+        }
+    },
+    "bookings":{
+      "title": "RESERVAS",
+      "card":{
+        "title": "PARA RESERVAR CONTÁCTESE POR WHATS APP!",
+        "button": "CONTACTAR",
+        "subtitle": "PARA MAS INFORMACIÓN, SEGUINOS EN NUESTRAS REDES SOCIALES"
+      }
+    },
+    "footer":{
+      "phone": "TELÉFONO",
+      "social-media": "REDES SOCIALES",
+      "terms-and-conditions":"TÉRMINOS Y CONDICIONES",
+      "read":"Lea",
+      "here": "aquí",
+      "adress": "DIRECCIÓN",
+      "place": "Ruta 3, km 1453. Trelew, Chubut. Patagonia argentina.",
+      "development":"Desarrollado por"
+    }
+  }

@@ -1,7 +1,9 @@
 import './Select.css'
-import arg from '../../img/arg.png'
-import gb from '../../img/gb.png'
+import es from '../../img/es.png'
+import en from '../../img/en.png'
 import { useState } from 'react'
+import {useTranslation} from 'react-i18next'
+import { use } from 'i18next'
 
 const Select = ()=>{
 
@@ -19,30 +21,40 @@ const Select = ()=>{
             })
         });
     
-    
+    const [t, i18n]= useTranslation("global")
+
+    const changeLng=(lng)=>{
+       i18n.changeLanguage(lng)
+    }
+
     const [isSelect, setIsSelect] = useState(false)
     const openSelect = ()=>{
         setIsSelect(!isSelect)
       }
+
+   
+      
+
+    
     return(
         <div  className='select-container'>
             <form action="">
                 <div className="selectbox">
                     <div onClick={openSelect} className="select" id='select'>
                         <div className="contenido-select">
-                        <img src={arg} alt="Bandera de Argentina" />
+                        <img src={es} alt="Bandera de Argentina" />
                         </div>
                         <i class="fa-sharp fa-solid fa-chevron-down"></i>
                     </div>
                     <div className={`options ${isSelect ? 'active': ''}`} id='options' onClick={openSelect}>  
-                        <a className='option' href="#" >
+                        <a onClick={()=>changeLng("es")} className='option' href="#" >
                             <div className="contenido-option">
-                                <img src={arg} alt="Bandera de Argentina" />
+                                <img src={es} alt="Bandera de Argentina" />
                             </div>
                         </a>
-                        <a className='option' href="#" >
+                        <a onClick={()=>changeLng("en")} className='option' href="#" >
                             <div className="contenido-option">
-                                <img src={gb} alt="Bandera de Gran Betaña" />
+                                <img src={en} alt="Bandera de Gran Betaña" />
                             </div>
                         </a>
                         

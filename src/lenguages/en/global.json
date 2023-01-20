@@ -1,0 +1,56 @@
+{
+    "navbar":{
+      "rooms": "Rooms",
+      "restaurant": "Restaurant",
+      "about-us": "About us",
+      "bookings": "Bookings"
+    },
+    "rooms":{
+      "title":"ROOMS",
+      "subtitle":"SERVICES",
+      "icons": {
+        "bed": "Rooms for up to 6 people",
+        "towell": "Bed linen",
+        "air-conditioner": "Air conditioner",
+        "central-heating": "Central heating",
+        "camera": "Surveillance cameras",
+        "security": "24hs security",
+        "parking": "Parking",
+        "pets": "We accept pets"
+      }
+    },
+    "restaurant":{
+        "title": "RESTAURANT"
+    },
+
+    "about-us":{
+      "title":"ABOUT US",
+      "card":{
+        "title":"Welcome to",
+        "text": "In 2008 the dream of building an inn on our grandfather's farm began. From then on, we have not stopped growing.",
+        "cards":{
+            "rooms": "ROOMS",
+            "guests": "GUESTS PER YEAR",
+            "staff": "STAFF"
+        }
+        }
+    },
+    "bookings":{
+      "title": "BOOKINGS",
+      "card":{
+        "title": "TO RESERVE CONTACT BY WHATS APP!",
+        "button": "CONTACT",
+        "subtitle": "FOR MORE INFORMATION, FOLLOW US ON OUR SOCIAL NETWORKS"
+      }
+    },
+    "footer":{
+      "phone": "PHONE",
+      "social-media": "SOCIAL MEDIA",
+      "terms-and-conditions":"TERMS AND CONDITIONS",
+      "read":"Read",
+      "here": "here",
+      "adress": "ADRESS",
+      "place": "Ruta 3, km 1453. Trelew, Chubut. Patagonia argentina.",
+      "development":"Developed by"
+    }
+  }

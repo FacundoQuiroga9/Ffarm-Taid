@@ -19,7 +19,6 @@ import baño from '../../img/baño.jpeg'
 import television from '../../img/television.jpeg'
 import garageimg from '../../img/garage.jpeg'
 import camaimg from '../../img/habitacion5.jpeg'
-import Mapa from '../../components/Mapa/Mapa'
 import img1 from '../../img/hosteria-noche.jpg'
 import img2 from '../../img/recepcion.jpeg'
 import img3 from '../../img/mesas.jpeg'
@@ -28,52 +27,55 @@ import Contador from '../../components/Contador/Contador'
 import puerta from '../../img/Puerta.png'
 import usuarios from '../../img/Usuarios.png'
 import empleados from '../../img/Empleados.png'
+import {useTranslation} from 'react-i18next'
+
 
 
 const Home = ()=>{
+  const [t, i18n]= useTranslation("global")
   return(
     <>
     <video autoPlay muted loop>
         <source src={video} />
     </video>
     <div className="title-container">
-      <h2 id='hosteria' className='title'>HABITACIONES</h2>
+      <h2 id='hosteria' className='title'>{t("rooms.title")}</h2>
     </div>
     <section className="section_hosteria">
     <CarouselHab imagen1={baño} imagen2={television} imagen3={garageimg} imagen4={camaimg}/>
     <div className='info-container'>
-      <h3 className="servicios">SERVICIOS</h3>
+      <h3 className="servicios">{t("rooms.subtitle")}</h3>
       <div className="items-container">
-      <Item imagen={cama} texto="Habitaciones hasta para 6 personas"/>
-      <Item imagen={toallas} texto="Ropa de cama y blancos"/>
+      <Item imagen={cama} texto={t("rooms.icons.bed")}/>
+      <Item imagen={toallas} texto={t("rooms.icons.bed")}/>
       <Item imagen={tv} texto="DirecTv"/>
       <Item imagen={wifi} texto="Wifi"/>
-      <Item imagen={aire} texto="Aire acondicionado"/>
-      <Item imagen={calefaccion} texto="Calefacción central"/>
-      <Item imagen={camara} texto="Cámaras de vigilancia"/>
-      <Item imagen={seguridad} texto="Seguridad 24hs"/>
-      <Item imagen={garage} texto="Estacionamiento"/>
-      <Item imagen={mascota} texto="Aceptamos mascotas"/>
+      <Item imagen={aire} texto={t("rooms.icons.air-conditioner")}/>
+      <Item imagen={calefaccion} texto={t("rooms.icons.central-heating")}/>
+      <Item imagen={camara} texto={t("rooms.icons.camera")}/>
+      <Item imagen={seguridad} texto={t("rooms.icons.security")}/>
+      <Item imagen={garage} texto={t("rooms.icons.parking")}/>
+      <Item imagen={mascota} texto={t("rooms.icons.pets")}/>
       </div>
     </div>
     </section>
     <div className="title-container">
-      <h2 id='restaurante' className='title'>RESTAURANTE</h2>
+      <h2 id='restaurante' className='title'>{t("restaurant.title")}</h2>
     </div>
     <section className="section_restaurante">
       <CarouselCarta />
       <CarouselRest />
     </section>
     <div className="title-container">
-      <h2 id='nosotros' className='title'>SOBRE NOSOTROS</h2>
+      <h2 id='nosotros' className='title'>{t("about-us.title")}</h2>
     </div>
       <div className='nosotros-container'>
         <div className="nosotros-info-container">
-          <h1 className="bienvenido">Bienvenido a <span>Ffarm Taid</span></h1>
-          <p>En 2008 comenzó el sueño de construir una hosteria en la granja de nuestro abuelo. De ahi en más, no hemos dejado de crecer.</p>
+          <h1 className="bienvenido">{t("about-us.card.title")}<span> Ffarm Taid</span></h1>
+          <p>{t("about-us.card.text")}</p>
         <div className="contadores">
-          <Contador imagen={puerta} numero="18" nombre="HABITACIONES" />
-          <Contador imagen={usuarios} numero="20 mil" nombre="HUESPEDES AL AÑO" />
+          <Contador imagen={puerta} numero="18" nombre={t("about-us.card.cards.rooms")} />
+          <Contador imagen={usuarios} numero="20 mil" nombre={t("about-us.card.cards.guests")} />
           <Contador imagen={empleados} numero="12" nombre="STAFF"/>
         </div>
         </div>
@@ -86,12 +88,12 @@ const Home = ()=>{
 
       </div>
       <div className="title-container">
-        <h2 id='contacto' className='title'>RESERVAS</h2>
+        <h2 id='contacto' className='title'>{t("bookings.title")}</h2>
       </div>
     <div className="section-contacto-container">
-    <h3 className='contact-title'>PARA RESERVAR CONTÁCTESE POR WHATS APP!</h3>
+    <h3 className='contact-title'>{t("bookings.card.title")}</h3>
     <BtnContacto />
-    <h3 className='contact-title'>PARA MAS INFORMACIÓN, SEGUINOS EN NUESTRAS REDES SOCIALES</h3>
+    <h3 className='contact-title'>{t("bookings.card.subtitle")}</h3>
     <div className='social-media'>
       <a className='media-link' href="https://www.facebook.com/FfarmTaid" target="_blanck">
       <svg className='media' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

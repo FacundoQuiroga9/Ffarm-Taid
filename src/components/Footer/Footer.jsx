@@ -1,17 +1,18 @@
 import './Footer.css'
 import Mapa from '../Mapa/Mapa'
 import logo from '../../img/Logo.png'
+import {useTranslation} from 'react-i18next'
 
 
 const Footer = ()=>{
-
+  const [t, i18n]= useTranslation("global")
   return(
     <footer className='footer'>
       
       <div className="footer2">
-        <h4 className='footer-title'>TELÉFONO</h4>
+        <h4 className='footer-title'>{t("footer.phone")}</h4>
         <p className="telefono">+54 280 435-5276</p>
-        <h4 className='footer-title'>REDES SOCIALES</h4>
+        <h4 className='footer-title'>{t("footer.social-media")}</h4>
         <div className='social-media-container'>
           <a className='media-link' href="https://www.facebook.com/FfarmTaid" target="_blanck">
             <svg className='media' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -24,17 +25,17 @@ const Footer = ()=>{
             </svg>
           </a>
         </div>
-          <h4 className='footer-title'>TERMINOS Y CONDICONES</h4>
-          <p className='terminos'>Lea <a className='aqui' href='#'>aquí</a></p>
+          <h4 className='footer-title'>{t("footer.terms-and-conditions")}</h4>
+          <p className='terminos'>{t("footer.read")} <a className='aqui' href='#'>{t("footer.here")}</a></p>
       </div>
       <div className="footer1">
-        <h4 className='footer-title'>DIRECCIÓN</h4>
+        <h4 className='footer-title'>{t("footer.adress")}</h4>
         <p className='direccion'>Ruta 3, km 1453. Trelew, Chubut. Patagonia argentina.</p>
         <Mapa />
       </div>
       <div className="footer3">
         <img className='logo-png' src={logo} alt="Logo de Ffarm Taid" />
-        <p className="desarrollo">Desarrollado por <a href="https://quirogafacundo.com" target='_blanck'><span className='fq'>FQ</span></a></p>
+        <p className="desarrollo">{t("footer.development")} <a href="https://quirogafacundo.com" target='_blanck'><span className='fq'>FQ</span></a></p>
       </div>
     </footer>
   )
