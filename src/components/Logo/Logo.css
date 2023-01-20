@@ -1,0 +1,25 @@
+
+.logo-container{
+  width: 60%;
+}
+.logo-svg:hover .nombre{
+  fill: #EC1B24;
+}
+.logo-svg:hover .ojos{
+  fill: #EC1B24;
+}
+.logo-svg:hover .dragon{
+  fill: white;
+}
+
+@media (min-width: 750px){
+  
+  .logo-container{
+    width: 10rem;
+  }
+}
+@media (min-width: 1000px){
+  .logo-container{
+    width: 12rem;
+  }
+}

@@ -1,0 +1,90 @@
+.page-container{
+  color: black;
+  width: 90%;
+  margin: 9rem auto 2rem;
+}
+
+.page-titulo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: .4rem 0;
+}
+.page-subtitulo{
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.page-texto{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+.page-imagen{
+  margin-top: 1.5rem;
+  width: 100%;
+  border: .3rem solid black;
+}
+.page-imagen2{
+  margin-top: 1.5rem;
+  width: 100%;
+  border: .3rem solid black;
+}
+.bi{
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 420px){
+  .page-container{
+    margin: 10rem auto 2rem;
+  }
+}
+@media (min-width: 750px){
+  .page-container{
+    width: 70%;
+    margin: 9rem auto 2rem;
+  }
+  .page-titulo{
+    font-size: 2rem;
+    margin: .8rem 0;
+  }
+  .page-subtitulo{
+    font-size: 1.7rem;
+  }
+  .page-texto{
+    font-size: 1.5rem;
+  }
+  .page-imagen{
+    margin-top: 1.5rem auto;
+    width: 100%;
+    border: .5rem solid black;
+  }
+  .page-imagen2{
+    margin-top: 1.5rem;
+    width: 100%;
+    border: .5rem solid black;
+  }
+}
+@media (min-width: 1000px){
+  .page-container{
+    width: 90%;
+    margin: 11rem auto 2rem;
+  }
+  .page-titulo{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+  .page-subtitulo{
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  .page-texto{
+    font-size: 1.7rem;
+    margin: 2rem 0;
+  }
+}

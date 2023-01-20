@@ -1,0 +1,30 @@
+.boton-whatsapp{
+  user-select: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  max-width: 11rem;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+}
+.boton-whatsapp:hover{
+  color: white;
+  background-color: #F20000;
+}
+
+.bi-whatsapp{
+  width: 2rem;
+}
+
+@media (min-width: 420px){
+ 
+}
+@media (min-width: 750px){
+
+}
+@media (min-width: 1000px){
+
+}

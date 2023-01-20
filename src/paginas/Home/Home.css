@@ -1,0 +1,224 @@
+video{
+  height: 100vh;
+}
+.title-container{
+  margin: 2em 0;
+  padding: .5em;
+  background-image: url(../../img/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 10px black;
+}
+.title{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  font-family: 'Almendra SC', serif;
+  letter-spacing: .2em;
+  line-height: 1.5em;
+  scroll-margin-top: 8.2rem;
+}
+.title::selection{
+  background-color: #B12B28;
+}
+.section_hosteria{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-direction: column;
+  
+}
+
+.info-container{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(190deg, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);
+}
+.servicios{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+.servicios::selection{
+  background-color: #B91D17;
+}
+.items-container{
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+.contacto-container{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 50%;
+  background: linear-gradient(190deg, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);
+  padding: 2em 0;
+  align-items: center;
+
+
+}
+.contact-title{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  margin: 1.5em 0;
+}
+.section_restaurante{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(190deg, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);
+  box-shadow: 10px 10px 20px black;
+}
+
+.nosotros-container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: white;
+}
+
+.nosotros-info-container{
+  background: linear-gradient(190deg, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);
+  padding: 1rem;
+}
+
+.nosotros-container h1{
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: .5rem;
+}
+h1>span{
+  font-weight: bold;
+}
+.contadores{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nosotros-imgs-container{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.img1{
+  width: 80%;
+  align-self: end;
+  justify-self: end;
+}
+.img2{
+  width: 60%;
+  align-self: end;
+}
+.img3{
+  width: 65%;
+  justify-self: end;
+}
+.img4{
+  width: 85%;
+}
+
+.section-contacto-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  padding: 1rem;
+  background: linear-gradient(190deg, rgba(25,25,25,1) 0%, rgba(0,0,0,1) 100%);
+  width: 90%;
+}
+.social-media{
+  display: flex; 
+}
+.media-link{
+  color: black;
+  margin: 0 1em 1.5em 1em;
+}
+
+.media:hover>path{
+  fill: #F20000;
+}
+.media2:hover>path{
+  fill: #F20000;
+}
+.media-link svg{
+  width: 2em;
+  height: 2em
+}
+
+
+
+
+@media (min-width: 420px){
+
+}
+@media (min-width: 750px){
+  .nosotros-container{
+    width: 60%;
+  }
+}
+@media (min-width: 1000px){
+  
+  .section_hosteria{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 4rem;
+  }
+  .info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    width: 50%;
+  }
+
+  .servicios{
+    font-size: 2rem;
+  }
+
+  .section_restaurante{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .title{
+    font-size: 3em;
+    scroll-margin-top: 6.2rem;
+  }
+  .nosotros-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros-info-container{
+    width: 50%;
+  }
+  .nosotros-imgs-container{
+    width: 50%;
+  }
+  .nosotros-info-container>h2{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .nosotros-info-container>p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+ 
+}

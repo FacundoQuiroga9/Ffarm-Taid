@@ -1,0 +1,19 @@
+.leaflet-container{
+  margin: 1rem auto;
+  width: 90%;
+  height: 15rem;
+  z-index: 0;
+  border: .3rem solid black;
+
+}
+
+@media (min-width: 750px){
+  .leaflet-container{
+    border: .5rem solid black;
+  } 
+}
+@media (min-width: 1000px){
+  .leaflet-container{
+    width: 70%;
+  }
+}

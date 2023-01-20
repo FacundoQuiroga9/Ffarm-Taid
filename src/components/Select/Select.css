@@ -1,0 +1,94 @@
+.select-container{
+    margin-top: 1rem;
+    padding: .2rem .5rem;
+    font-size: 1.5rem;
+    
+    
+    
+}
+
+.selectbox{
+    width: 100%;
+    position: relative;
+    background-color: #191919;
+    
+    
+}
+.contenido-select{
+    width: 2rem;
+}
+
+
+.select{
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    position: relative;
+}
+.select>i{
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+.options{
+    width: 100%;
+    z-index: 100;
+    display: none;
+    background-color: #191919;;
+    
+}
+.options.active{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    animation: fadeIn .3s forwards;
+    
+}
+
+.option{
+    width: 100%;
+    margin: .5rem auto;
+    padding: .2rem;
+}
+.option img{
+    width: 2rem;
+    margin: 0 auto
+}
+.option:hover{
+    background-color: white;
+}
+@keyframes fadeIn{
+    from{
+        transform: translateY(-50%) scale(.5);
+    }
+    to{
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (min-width: 480px){
+    .select-container{
+        margin-top: 0;
+    }
+}
+@media (min-width: 750px){
+    .select-container{
+        font-size:  .7rem;
+    }
+    .contenido-select{
+        width: 2rem;
+        
+    }
+    .select>i{
+        margin-left: .5rem;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1000px){
+    .select-container{
+        font-size:  .8rem;
+    }
+}
