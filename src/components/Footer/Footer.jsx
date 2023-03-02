@@ -26,7 +26,7 @@ const Footer = ()=>{
           </a>
         </div>
           <h4 className='footer-title'>{t("footer.terms-and-conditions")}</h4>
-          <p className='terminos'>{t("footer.read")} <a className='aqui' href='#'>{t("footer.here")}</a></p>
+          <p className='terminos'>{t("footer.read")} <a className='aqui' href='/Terminos.pdf' target="_blanck">{t("footer.here")}</a></p>
       </div>
       <div className="footer1">
         <h4 className='footer-title'>{t("footer.adress")}</h4>

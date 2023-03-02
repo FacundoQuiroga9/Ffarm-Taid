@@ -47,7 +47,7 @@ const Home = ()=>{
       <h3 className="servicios">{t("rooms.subtitle")}</h3>
       <div className="items-container">
       <Item imagen={cama} texto={t("rooms.icons.bed")}/>
-      <Item imagen={toallas} texto={t("rooms.icons.bed")}/>
+      <Item imagen={toallas} texto={t("rooms.icons.towell")}/>
       <Item imagen={tv} texto="DirecTv"/>
       <Item imagen={wifi} texto="Wifi"/>
       <Item imagen={aire} texto={t("rooms.icons.air-conditioner")}/>
