@@ -1,5 +1,5 @@
 /*
-    
+
   Con este reset vamos a resolver:
     👉 Unificar el uso de Custom Properties
     👉 Problemas de box-model más generales
@@ -8,21 +8,21 @@
     👉 Unificar la tipografía de todas las etiquetas de una web
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 /* Aquí definimos las Custom properties */
 :root{
-  --negro         : #393939;
-  
+  --black         : rgba(25,25,25,1);
+
   /* Tipografía */
   --tipo-principal   : 'Merriweather', serif;
   --tipo-secundaria  : Verdana;
+  --tipo-titulo: "Almendra", serif;
 }
-  
+
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root{
-      --negro         : #ececec;
+      --white         : #ececec;
   }
 }
 
@@ -58,7 +58,7 @@ img , picture , video , iframe , figure{
   max-width: 100%;
   width: 100%;
   display: block;
-  /* opcional */ object-fit: cover;        
+  /* opcional */ object-fit: cover;
   /* opcional */ object-position: center center;
 }
 
@@ -138,10 +138,11 @@ body {
   min-height  : 100vh;
   font-size   : 100%;
   font-family : var(--tipo-principal);
-  color       : var(--negro);
+  color       : var(--black);
   /* opcional */ line-height: 1.4em;
-  /* opcional */ hyphens: auto;
+  /* opcional */ hyphens: none;
   /* opcional */ font-smooth: always;
   /* opcional */ -webkit-font-smoothing: antialiased;
   /* opcional */ -moz-osx-font-smoothing: grayscale;
+  background-image: url(./img/fondo.jpg);
 }

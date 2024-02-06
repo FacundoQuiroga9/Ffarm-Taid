@@ -1,0 +1,45 @@
+                            /* Phone sm */
+.carousel-menu-container{
+  width: 100%;
+}
+.carousel-menu-image{
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  user-select: none;
+}
+.buttons-container{
+  display: flex;
+  width: 100%;
+}
+.buttons-container>button{
+  padding: .5rem;
+  user-select: none;
+  margin:0;
+  background-color: black;
+  color: white;
+  width: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.buttons-container>button:hover{
+  background-color: #EC1B24;
+
+}
+.loaded{
+  opacity: 1;
+}
+@media (min-width: 768px){ /* Tablets md */
+  .carousel-menu-container{
+    width: auto;
+    height: 100%;
+  }
+}
+@media (min-width: 992px){  /* Laptops lg */
+  .carousel-menu-container{
+    height: 100%;
+  }
+}
+@media (min-width: 1200px){ /* Big screens xl */
+
+}

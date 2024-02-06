@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './CarouselCarta.css'
+import './CarouselMenu.css'
 import tapa from '../../img/Carta Ffarm Taid comida.jpg'
 import contratapa from '../../img/Carta Ffarm Taid bebidas.jpg'
 
@@ -29,8 +29,8 @@ import contratapa from '../../img/Carta Ffarm Taid bebidas.jpg'
   }
 
   return(
-    <div className='carrousel-container-carta'>
-      <img className={`carrousel-carta-image ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
+    <div className='carousel-menu-container'>
+      <img className={`carousel-menu-image ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
       <div className='buttons-container'>
         <button onClick={previous}>{'<'}</button>
         <button onClick={next}>{'>'}</button>
@@ -40,4 +40,3 @@ import contratapa from '../../img/Carta Ffarm Taid bebidas.jpg'
 }
 
 export default Carousel
-

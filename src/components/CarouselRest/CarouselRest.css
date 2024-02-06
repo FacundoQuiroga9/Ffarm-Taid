@@ -1,13 +1,13 @@
-
-.carrousel-container-rest{
-  height: 100%;
+                                  /* Phone sm */
+.carousel-restaurant-container{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.carrousel-image-rest{
+.carousel-restaurant-image{
   height: 100%;
   opacity: 0;
   transition: 1s;
@@ -16,20 +16,23 @@
 .loaded{
   opacity: 1;
 }
-@media (min-width: 420px){
-  .carrousel-container-rest{
-    height: 30rem;
+@media (min-width: 768px){ /* Tablets md */
+  .carousel-restaurant-container{
+    width: 100%;
+    height: 40rem;
   }
 }
-@media (min-width: 750px){
-  .carrousel-container-rest{
-    height: 35rem;
+@media (min-width: 992px){  /* Laptops lg */
+  .carousel-restaurant-container{
+    width: 100%;
+    height: 40rem
   }
-}
-@media (min-width: 1000px){
-  .carrousel-container-rest{
-    height: auto;
+  .carousel-restaurant-image{
+    width: 100%;
+    height: 40rem;
   }
 
+}
+@media (min-width: 1200px){ /* Big screens xl */
 
 }

@@ -32,8 +32,8 @@ import comida5 from '../../img/comida5.jpeg'
 
 
   return(
-    <div className='carrousel-container-rest'>
-      <img className={`carrousel-image-rest ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
+    <div className='carousel-restaurant-container'>
+      <img className={`carousel-restaurant-image ${loaded ?'loaded':''}`} src={selectedImage} alt="foto de la habitacion" onLoad={()=>setLoaded(true)}/>
     </div>
   )
 }
